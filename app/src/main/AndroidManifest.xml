@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tonykogias.tictactoe">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/rsz_taskbaricon"
+        android:label="@string/app_name"
+        android:logo="@drawable/rsz_taskbaricon"
+        android:roundIcon="@drawable/rsz_taskbaricon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        //android:configChanges="orientation|screenSize|keyboardHidden" after activity android:name
+        ... ama thelw na valw to ikonidio panw sto actionbar
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ChooseOpp" />
+        <activity android:name=".play3x3" />
+        <activity android:name=".play4x4" />
+        <activity android:name=".play3x3bot" />
+        <activity android:name=".play4x4bot"></activity>
+    </application>
+
+</manifest>
